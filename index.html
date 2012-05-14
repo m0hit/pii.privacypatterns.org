@@ -6,15 +6,32 @@
 				body
 				{
 					font-family: 'PT Sans', sans-serif;
+               background-color: #333333;
 					display:-webkit-box;
 					-webkit-box-align:center;
-					-webkit-box-pack:center;
-				}
-				
+               -webkit-box-pack:center;
+            }
+
+            header
+            {
+               color: #FF9933;
+               width: auto;
+               font-size: 114px;
+            }
+
+            .contact
+            {
+               color: #cccccc;
+            }
+
+            .contact:hover
+            {
+               background:#D4262C;
+            }
+
 				#container
 				{
 					margin:auto auto;
-					background:url('coverbook.png');
 					width:792px;
 					height:612px;
 					position:relative;
@@ -24,15 +41,15 @@
 				#buttons
 				{
 					position:absolute;
-					top:450px;
+					top:350px;
 					left:70px;
 				}
 				
 				.button
 				{
-					width:100px;
+					width:500px;
 					height:30px;
-					background:#EF3B40;
+					background:#FF9933;
 					color:white;
 					margin:0px 6px;
 					display:inline-block;
@@ -40,14 +57,16 @@
 					border-radius:5px;
 					line-height:30px;
 					font-size: 18px;
-					padding: 5px 15px;
+               padding: 5px 15px;
+               margin-bottom: 10px;
 				}
 				
 				a
 				{
 					text-decoration:none;
-				}
-				
+               color: #FF9933;
+            }
+
 				.button:hover 
 				{
 					background:#D4262C;
@@ -74,10 +93,22 @@
 
 	</head>
 	<body>
-		<div id="container">
+      <div id="container">
+         <header>
+         <a href="http://www.privacypatterns.org">Privacy Patterns</a>
+         </header>
+         <contact>
+            <a class="contact" href="mailto:mohit@locationlabs.com">Mohit Gupta (mohit@locationlabs.com)</a>
+            <br />
+            <a class="contact" href="mailto:npdoty@w3c.org">Nick Doty (npdoty@w3c.org)</a>
+         </contact>
 			<div id="buttons">
-				<a href="media/designbook_ky.pdf"><div id="learnmore" class="button">Learn More</div></a>
-				<a href="media/designbook_demo.pdf"><div id="demo" class="button">Demo</div></a>
+            <a href="privacypattens.pii.pdf"><div id="home" class="button">Presentation at PII2012</div></a>
+            <a href="http://github.com/m0hit/privacypatterns"><div id="github home" class="button">Privacy Patterns on Github</div></a>
+            <a href="http://github.com/m0hit/privacypatterns/wiki/"><div id="wiki" class="button">Wiki</div></a>
+            <a href="http://github.com/m0hit/privacypatterns/wiki/Patterns-to-write"><div id="to-write" class="button">Patterns to write</div></a>
+            <a href="http://github.com/m0hit/privacypatterns/issues"><div id="to-write" class="button">Create an issue</div></a>
+
 			</div>
 		</div>
 	</body>
